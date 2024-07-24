@@ -35,6 +35,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
+        run: echo "$PWD"
         uses: snyk/actions/maven@master
         # continue-on-error: true
         env:
